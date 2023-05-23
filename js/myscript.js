@@ -13,21 +13,19 @@ const gridElement = document.getElementById("grid")
 //! CREO IL CICLO 
 
 for (let index = 0; index < 100; index ++) {
-    const actualCell = createCellElement("div", "cell");
-    
+    const actualCell = createElement("div", "cell");
     actualCell.addEventListener("click", function(){
         actualCell.classList.toggle("selected");
-    })
-
-    gridElement.appendChild(actualCell);
+    });
+    gridElement.appendChild((actualCell));
 }
 
 
 
 
 //* CREO LA FUNZIONE DELLA SINGOLA CELLA
-function createCellElement(tagName, className){
-    const cellElement = document.createCellElement(tagName);
+function createElement(tagName, className){
+    const cellElement = document.createElement(tagName);
     cellElement.className += className;
-    return createCellElement;
+    return cellElement;
 }

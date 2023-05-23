@@ -10,7 +10,7 @@ header{
 
 main{
     background-color: #7fffd4;
-
+    height: 2000px;
 }
 
 div.grid{
@@ -19,6 +19,7 @@ div.grid{
     margin: 0 auto;
     display: flex;
     flex: wrap;
+    border: 1px black solid;
 }
 
 div.grid .cell{
