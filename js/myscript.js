@@ -6,25 +6,6 @@
 //* GENERO L'ELEMENTO GRID CHE è COLLEGATO CON IL DIV IN HTML
 const gridElement = document.getElementById("grid")
 
-
-
-
-
-//! CREO IL CICLO 
-//* CREO IL CICLO FOR PERCHè SO QUANTE CELLE DEVO METTERE NELLA GRID 
-for (let index = 0; index < 100; index ++) {
-    //* DEFINISCO CON UNA VARIABILE GLI ELEMENTI DEL CICLO
-    const actualCell = createElement("div", "cell");
-    //* AGGIUNGO ALLA CELLA LA FUNZIONE PER FARLA CAMBIARE DI COLORE
-    actualCell.addEventListener("click", function(){
-        actualCell.classList.toggle("selected");
-    });
-    gridElement.appendChild(createElement("div", "cell"));
-}
-
-
-
-
 //* CREO LA FUNZIONE DELLA SINGOLA CELLA
 function createElement(tagName, className){
     //* GENERO LA VARIABILE DELLA CELLA
@@ -40,5 +21,18 @@ function createElement(tagName, className){
 const button = document.querySelector("button");
 
 button.addEventListener("click", function() {
+    
+//! CREO IL CICLO 
+//* CREO IL CICLO FOR PERCHè SO QUANTE CELLE DEVO METTERE NELLA GRID 
+for (let index = 0; index < 100; index ++) {
+    //* DEFINISCO CON UNA VARIABILE GLI ELEMENTI DEL CICLO
+    const actualCell = createElement("div", "cell");
+    //* AGGIUNGO ALLA CELLA LA FUNZIONE PER FARLA CAMBIARE DI COLORE
+    actualCell.addEventListener("click", function(){
+        actualCell.classList.add("selected");
+        actualCell.classList.remove("selected");
 
+    });
+    gridElement.appendChild(createElement("div", "cell"));
+}
 });
