@@ -19,7 +19,7 @@ for (let index = 0; index < 100; index ++) {
     actualCell.addEventListener("click", function(){
         actualCell.classList.toggle("selected");
     });
-    gridElement.appendChild((actualCell));
+    gridElement.appendChild(createElement("div", "cell"));
 }
 
 
@@ -29,7 +29,7 @@ for (let index = 0; index < 100; index ++) {
 function createElement(tagName, className){
     //* GENERO LA VARIABILE DELLA CELLA
     const cellElement = document.createElement(tagName);
-    cellElement.className += className;
+    cellElement.className = className;
     //* RESTITUISCO A CHI CHIAMA L'ELEMENTO 
     return cellElement;
 }

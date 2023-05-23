@@ -28,6 +28,11 @@ div.grid .cell{
     border: 1px black solid;
 }
 
+div.grid,
+div.grid .cell{
+    border: 1px black solid;
+}
+
 div.grid .cell.selected{
     background-color: rgb(33, 33, 247);
 }
