@@ -39,6 +39,6 @@ function createElement(tagName, className){
 
 const button = document.querySelector("button");
 
-button.addEventListener("click", function()) {
+button.addEventListener("click", function() {
 
-}
+});
