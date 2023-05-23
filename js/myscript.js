@@ -27,9 +27,10 @@ for (let index = 0; index < 100; index ++) {
 
 //* CREO LA FUNZIONE DELLA SINGOLA CELLA
 function createElement(tagName, className){
-    //? GENERO LA VARIABILE DELLA CELLA
+    //* GENERO LA VARIABILE DELLA CELLA
     const cellElement = document.createElement(tagName);
     cellElement.className += className;
+    //* RESTITUISCO A CHI CHIAMA L'ELEMENTO 
     return cellElement;
 }
 
