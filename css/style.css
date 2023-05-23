@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 50px;
+}
+
+main{
+    background-color: #7fffd4;
+
+}
+
+div.grid{
+    height: 650px;
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex: wrap;
+}
+
+div.grid .cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px black solid
+}
+
+div.grid .cell.selected{
+    background-color: rgb(33, 33, 247);
+}
