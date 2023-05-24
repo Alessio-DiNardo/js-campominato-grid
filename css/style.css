@@ -33,10 +33,27 @@ div.grid .cell{
     border: 1px black solid;
 }
 
-div.grid .cell.selected{
+div.grid .cell.active{
     background-color: rgb(33, 33, 247);
 }
 
 div.grid .cell>p{
-    
+    margin: auto;
+}
+
+div.grid .cell.cell-easy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+
+div.grid .cell.cell-medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+
+div.grid .cell.cell-hard{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
