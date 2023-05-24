@@ -29,9 +29,9 @@ for (let index = 0; index < 100; index ++) {
     const actualCell = createElement("div", "cell");
     //* AGGIUNGO ALLA CELLA LA FUNZIONE PER FARLA CAMBIARE DI COLORE
     actualCell.addEventListener("click", function(){
-        actualCell.classList.add("selected");
-        actualCell.classList.remove("selected");
-
+        actualCell.classList.toggle("selected");
+        
+        
     });
     gridElement.appendChild(actualCell);
 }
