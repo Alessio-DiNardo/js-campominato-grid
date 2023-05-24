@@ -21,12 +21,12 @@ function createElement(tagName, className){
 const button = document.querySelector("button");
 
 button.addEventListener("click", function() {
-    
+    gridElement.innerHTML = "";
 //! CREO IL CICLO 
 //* CREO IL CICLO FOR PERCHè SO QUANTE CELLE DEVO METTERE NELLA GRID 
 for (let index = 0; index < 100; index ++) {
     //* DEFINISCO CON UNA VARIABILE GLI ELEMENTI DEL CICLO
-    const actualCell = createElement("div", "cell");
+    const actualCell = createElement("div", "cell" + `<p>${index + 1}</p>`);
     //* AGGIUNGO ALLA CELLA LA FUNZIONE PER FARLA CAMBIARE DI COLORE
     actualCell.addEventListener("click", function(){
         actualCell.classList.toggle("selected");

@@ -36,3 +36,7 @@ div.grid .cell{
 div.grid .cell.selected{
     background-color: rgb(33, 33, 247);
 }
+
+div.grid .cell>p{
+    
+}
